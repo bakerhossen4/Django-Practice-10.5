@@ -30,6 +30,21 @@
         <p> {{ lststr | upper }}</p>
         <p> {{ lststr | wordcount }}</p>
 
+        <b> Earthly Dev </b>
+        <p> {{ date | date:"SHORT_DATE_FORMAT" }} </p>
+        <p> {{ date | date }} </p>
+        <p> {{ emptystr | default:"Empty String" }} </p>
+        
+        
+        <strong> {{ description | truncatechars:7 }} </strong>
+        <p> {{ description | wordcount }} </p>
+        <p> {{ description | truncatewords:2 }} </p>
+        {{ '<b> I </b> Have <button> A cow </button>' | striptags }}
+        <p> Example 1 : I have {{ num_messages }} message{{ num_messages | pluralize  }}</p>
+        <p> Example 2 : I have {{ num_messages }} message{{ num_messages | pluralize:'es'  }}</p>
+
+        <p> Example 3 : I have {{ num_messages }} message{{ num_messages | pluralize:"y,ies"  }}</p>
+
 
         
     </body>
