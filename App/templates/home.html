@@ -16,6 +16,20 @@
         <p> {{ value | first }} </p>
         <p> {{ value | last }} </p>
         <p> {{ value | join:" \ " }} </p>
+        <p> {{ a | linenumbers}} </p>
+        <p> {{ a | lower }} </p>
+        <p> {{ lststr | make_list }} </p>
+        <p> {{ lstint | make_list }} </p>
+        <p> {{ value | random }} </p>
+        <p> {{ value | slice:"3" }} </p>
+        <p> {{ a | slugify }} </p>
+        <p> {{ date | time:"H:i" }}</p>
+        <p> {{ blog_date | timesince }}</p>
+        <p> {{ lststr | title }}</p>
+        <p> {{ unlist | unordered_list }}</p>
+        <p> {{ lststr | upper }}</p>
+        <p> {{ lststr | wordcount }}</p>
+
 
         
     </body>

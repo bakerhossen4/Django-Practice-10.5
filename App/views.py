@@ -14,7 +14,11 @@ def Home( request ) :
                 { 'name' : 'Baker', 'age' : 23 },
                 { 'name' : 'Sujon', 'age' : 20 },
                 { 'name' : 'Faker', 'age' : 21 }
-            ]
+            ],
+        'lststr' : 'I am a student of phitron',
+        'lstint' : 1235332,
+        'blog_date' : datetime.datetime.now(),
+        'unlist' : ['Noakhali',['Feni','Cumilla'],'Dhaka',['Magura',['Dhaka','Bhola']]]
     }
     
     return render(request,'home.html',contextdata)
